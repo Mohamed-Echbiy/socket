@@ -53,7 +53,7 @@ function changeText() {
 // Change text every 6 hours
 setInterval(changeText, time);
 app.get("/", (req, res) => {
-  res.send("server running");
+  res.status(200).send("server running");
 });
 app.get("/currentIndex", (req, res) => {
   console.log(shuffledTexts[currentIndex]);
