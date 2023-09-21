@@ -40,7 +40,7 @@ function shuffleArray(array) {
 }
 
 function changeText() {
-  if (currentIndex >= texts.length) {
+  if (currentIndex >= texts.length-1) {
     currentIndex = 0;
     shuffledTexts = shuffleArray([...texts]); // Reshuffle the texts
   }
